@@ -27,7 +27,7 @@ def delete_task():
         tasks.pop()
         refresh_tasks()
     except:
-        messagebox.showwarning("Warning", "No tasks")
+        messagebox.showwarning("Warning", "There are no tasks")
 
 
 def clear_tasks():
