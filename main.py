@@ -38,7 +38,7 @@ app = ctk.CTk()
 
 app.title("Todo")
 
-app.geometry("250x200")
+app.geometry("400x350")
 
 entry = ctk.CTkEntry(app, width=150)
 entry.pack(pady=5)
