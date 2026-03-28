@@ -16,8 +16,11 @@ def refresh_tasks():
 def add_task():
     task = entry.get()
 
-    tasks.append(task)
+    if not task:
+        messagebox.showwarning("Warning", "Task cannot be empty!")
+        return
 
+    tasks.append(task)
     refresh_tasks()
     entry.delete(0, "end")
 
