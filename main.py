@@ -24,10 +24,15 @@ def add_task():
 
 def delete_task():
     try:
-        tasks.pop()
+        selected = listbox.get("sel.first", "sel.last").strip()
+
+        if selected in tasks:
+            tasks.remove(selected)
+
         refresh_tasks()
+
     except:
-        messagebox.showwarning("Warning", "There are no tasks!")
+        messagebox.showwarning("Warning", "Select a task first!")
 
 
 def clear_tasks():
