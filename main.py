@@ -43,7 +43,7 @@ app.geometry("250x200")
 entry = ctk.CTkEntry(app, width=150)
 entry.pack(pady=5)
 
-add_btn = ctk.CTkButton(app, text="Add", command=add_task, text_color="#2536c4")
+add_btn = ctk.CTkButton(app, text="Add", command=add_task)
 add_btn.pack(pady=3)
 
 delete_btn = ctk.CTkButton(app, text="Delete", command=delete_task)
