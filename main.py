@@ -65,3 +65,10 @@ listbox = ctk.CTkTextbox(app, width=200, height=60)
 listbox.pack(pady=5)
 
 app.mainloop()
+
+
+def divide(a: float, b: float) -> float:
+    if b == 0:
+        raise ValueError("Division by zero is not allowed")
+
+    return a / b
