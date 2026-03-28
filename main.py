@@ -34,7 +34,8 @@ def delete_task():
 
 
 def clear_tasks():
-    listbox.delete("1.0", "end")
+    tasks.clear()
+    refresh_tasks()
 
 
 app = ctk.CTk()
