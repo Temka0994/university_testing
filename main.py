@@ -36,7 +36,7 @@ def clear_tasks():
 
 app = ctk.CTk()
 
-app.title("Todo")
+app.title("ToDo Task Manager")
 
 app.geometry("250x200")
 
